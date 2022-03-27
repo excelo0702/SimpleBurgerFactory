@@ -1,7 +1,7 @@
 import Burger.*;
 
-public class OrderBurger {
-    public void orderBurger(String burgerType) {
+public class BurgerStore {
+    public void orderBurger() {
 
         IBurger burger = new PlainBurger();
         // bake burger
