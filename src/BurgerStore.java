@@ -1,7 +1,10 @@
 import Burger.*;
 
-public class OrderBurger {
+public class BurgerStore {
     public void orderBurger(String burgerType) {
+
+        // We have some different types of burger, so we are using decision
+        // making statement on burgerType and then will create burger
 
         IBurger burger;
         if(burgerType.equals("Veg")) {
@@ -15,6 +18,7 @@ public class OrderBurger {
         } else {
             burger = new PlainBurger();
         }
+        burger.description();
         // bake burger
         burger.bake();
         // pack burger
